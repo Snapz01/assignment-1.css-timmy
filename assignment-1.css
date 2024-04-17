@@ -1,0 +1,43 @@
+/* Style the menus using
+    flex,
+    padding,
+    background-color,
+    list-style,
+    text-decoration,
+    justify-content,
+    align-items
+ */
+
+
+#head-menu {
+    display: flex;
+    flex: 1;
+    flex-wrap: nowrap;
+    padding: 5px;
+    background-color: rgb(255, 242, 242);
+    list-style: square;
+    text-decoration: solid;
+    justify-content: space-between;    
+    align-items: start;
+}
+
+nav > ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px;
+    gap: 20px;
+}
+
+
+#sub-menu {
+    display: flex;
+    flex: 1;
+    flex-wrap: nowrap;
+    padding: 5px;
+    background-color: rgb(68, 68, 68);
+    list-style: square;
+    text-decoration: solid;
+    justify-content: space-between;
+    align-items: start;
+}
