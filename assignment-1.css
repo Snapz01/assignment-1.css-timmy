@@ -8,36 +8,77 @@
     align-items
  */
 
+ body {
+    margin: 0;
+ }
+
+header {
+    display: flexbox;
+    justify-content: center;
+
+}
+
+ #site-brand {
+    display: flex;
+    font-weight: bold;
+    justify-content: start;
+    align-items: center;
+}
+
 
 #head-menu {
     display: flex;
-    flex: 1;
-    flex-wrap: nowrap;
-    padding: 5px;
-    background-color: rgb(255, 242, 242);
-    list-style: square;
-    text-decoration: solid;
-    justify-content: space-between;    
-    align-items: start;
+    background-color: rgb(251,240,235,255);
+    justify-content: center;
+    flex: 2;
 }
 
 nav > ul {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 15px;
     gap: 20px;
+    list-style: none;
+    justify-content: ;
 }
 
+#promotion {
+    background-color: rgb(175,89,56,255);
+    color: white;
+}
+
+#promotion > a:visited, :link{
+    list-style: square;
+    text-decoration: solid;
+    color: white;
+}
+
+#login, #promotion {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin-left: 60px; /* fick ej inlogning + promotion att vara jämnte varan */
+}
+
+#login > a:visited, :link{
+    color: black;
+}
 
 #sub-menu {
     display: flex;
+    background-color: rgb(65,65,65,255);
+    justify-content: center;
     flex: 1;
-    flex-wrap: nowrap;
-    padding: 5px;
-    background-color: rgb(68, 68, 68);
-    list-style: square;
-    text-decoration: solid;
-    justify-content: space-between;
-    align-items: start;
+}
+#head-menu > nav >ul > li > :visited,:link{
+    color: black;
+    text-decoration: none;
+}
+
+
+#sub-menu > nav >ul > li > :visited,:link{
+    color: white;
+}
+
+.site-header, .sub-menu {
+    text-align: center;
+
 }
